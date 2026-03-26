@@ -1,0 +1,50 @@
+.score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  min-width: 72px;
+  transition: var(--transition);
+}
+
+.score-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.score-card--primary {
+  background: rgba(0,229,255,0.04);
+  border-color: rgba(0,229,255,0.15);
+}
+
+.score-card__ring {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-card__value {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.score-card--primary .score-card__value {
+  font-size: 16px;
+}
+
+.score-card__label {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+}
